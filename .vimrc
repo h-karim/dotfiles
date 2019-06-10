@@ -25,8 +25,6 @@ set autoindent
 "highlight matching search strings
 set hlsearch
 
-"CUSTOM COLOR SCHEME
-highlight Comment ctermbg=Yellow ctermfg=Yellow 
 
 "COMMANDS
 "get the name of a group
