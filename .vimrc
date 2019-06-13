@@ -24,8 +24,10 @@ set showmode
 set autoindent
 "highlight matching search strings
 set hlsearch
-
-
+	
+"tab-spacing
+set tabstop=4
+  		
 "COMMANDS
 "get the name of a group
 command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
