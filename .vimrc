@@ -22,6 +22,8 @@ set nospell
 set showmode
 "autoindent:
 set autoindent
+set smartindent
+set cino=e-4
 "highlight matching search strings
 set hlsearch
 	
@@ -34,3 +36,5 @@ command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
 "POWERLINE
 let g:powerline_pycmd="py3"
 set laststatus=2
+"Custom colors
+highlight Comment guifg=#5af67f

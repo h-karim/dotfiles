@@ -9,7 +9,7 @@
 !.xprofile 
 !.xinitrc 
 !.xbindkeysrc
-
+!.config/mpd/mpd.conf
 !.config/polybar/config
 !.config/i3/config
 !configprogress/package_list
