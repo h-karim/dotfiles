@@ -38,3 +38,4 @@ let g:powerline_pycmd="py3"
 set laststatus=2
 "Custom colors
 highlight Comment guifg=#5af67f
+highlight LineNr guifg=#ffffff
