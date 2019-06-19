@@ -199,4 +199,4 @@ exec --no-startup-id killall polybar; polybar -r example
 exec firefox
 exec thunderbird
 exec thunar --daemon ~/Desktop
-
+exec_always compton -bc

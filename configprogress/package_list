@@ -1,3 +1,4 @@
+compton
 arc-gtk-theme
 arc-icon-theme
 lxappearance
@@ -45,7 +46,7 @@ geckodriver
 flashplugin
 firefox
 feh
-dmenue
+dmenu
 efibootmgr
 cups
 deezloader-remix-bin

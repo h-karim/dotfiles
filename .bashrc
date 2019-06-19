@@ -10,6 +10,7 @@ alias purge='pacman -Rns $(pacman -Qtdq) '
 alias sudo='sudo '
 alias installpkg='makepkg -sirc'
 alias log-out='kill -9 -1'
+alias lock='light-locker-command -l'
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
 export TERM=termite
