@@ -80,6 +80,15 @@
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   XF86AudioMute
 
+"mpc play"
+  XF86AudioPlay
+"mpc next"
+  XF86AudioNext 
+"mpc prev"
+  XF86AudioPrev
+"mpc stop"
+  XF86AudioStop 
+
 # Increase backlight
 "xbacklight -inc 10"
    XF86MonBrightnessUp

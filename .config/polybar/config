@@ -54,9 +54,9 @@ module-margin-right = 2
 font-0 = Verdana:style=Regular:pixelsize=10;1
 font-1 = Unifont:style=Sans-Serif:size=8:antialias=false;0
 font-2 =Siji:style=Regular:pixelsize=10;1 
-modules-left = i3
+modules-left = i3 mpd
 modules-center = date
-modules-right = xbacklight pulseaudio xkeyboard memory  wlan eth battery temperature powermenu
+modules-right = xbacklight pulseaudio xkeyboard memory  wlan  battery temperature u
 
 tray-position = right
 tray-padding = 0
