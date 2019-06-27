@@ -195,10 +195,10 @@ for_window [class="^.*"] border pixel 1
 for_window [class="termite-floating"] border pixel 0 floating enable 
  
 exec --no-startup-id feh --bg-scale  ~/Pictures/Wallpapers/brown.jpg
-exec --no-startup-id killall polybar; polybar -r example
+exec_always --no-startup-id killall polybar; polybar -r example
 exec firefox
 exec thunderbird
-exec thunar --daemon ~/Desktop
+exec --no-startup-id thunar --daemon ~/Desktop
 exec_always --no-startup-id compton -bc
 
 # lock screen 
