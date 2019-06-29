@@ -80,8 +80,10 @@
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   XF86AudioMute
 
-"mpc play"
+"mpc toggle"
   XF86AudioPlay
+"mpc pause"
+  XF86AudioPause
 "mpc next"
   XF86AudioNext 
 "mpc prev"
