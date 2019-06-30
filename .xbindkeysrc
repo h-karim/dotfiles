@@ -91,6 +91,11 @@
 "mpc stop"
   XF86AudioStop 
 
+
+"scrot %F-%H:%M:%S.png -se 'mv $f Pictures/screenshots/'"
+  Shift+Mod4+p+Release
+"scrot %F-%H:%M:%S.png -e 'mv $f Pictures/screenshots/'"
+  Shift+Mod4+s
 # Increase backlight
 "xbacklight -inc 10"
    XF86MonBrightnessUp
