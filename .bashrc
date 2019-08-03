@@ -11,6 +11,8 @@ alias sudo='sudo '
 alias installpkg='makepkg -sirc'
 alias log-out='kill -9 -1'
 alias lock='light-locker-command -l'
+alias pip-update='sudo pip install --update --user '
+alias pip-install='sudo pip install -U '
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
 export TERM=termite
@@ -28,7 +30,6 @@ set colored-completion-prefix On
 set menu-complete-display-prefix On
 
 set show-all-if-ambiguous on
-
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
