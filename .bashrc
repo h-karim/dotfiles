@@ -11,7 +11,7 @@ alias sudo='sudo '
 alias installpkg='makepkg -sirc'
 alias log-out='kill -9 -1'
 alias lock='light-locker-command -l'
-alias pip-update='sudo pip install --update --user '
+alias pip-update='sudo pip install --upgrade --user '
 alias pip-install='sudo pip install -U '
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
