@@ -1,3 +1,4 @@
+reflector
 octave
 qbittorrent
 ntp
@@ -42,7 +43,6 @@ lolcat
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-light-locker
 libreoffice-still
 i3-gaps
 intel-ucode
