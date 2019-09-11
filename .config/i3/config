@@ -161,7 +161,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 mode "background" {
-     bindsym b exec --no-startup-id feh --randomize --bg-scale  /home/karim/Pictures/Wallpapers/* 
+     bindsym b exec --no-startup-id feh --randomize --bg-scale  /home/creator/Pictures/Wallpapers/* 
      bindsym Return mode "default"
      bindsym Escape mode "default"
      bindsym $mod+b mode "default"
