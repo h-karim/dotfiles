@@ -1,9 +1,9 @@
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #77222222
-background-alt = #444
+background = #77ffffff
+background-alt = #77777777
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
+foreground = #000000
 foreground-alt = #555
 primary = #77ffb52a
 secondary = #77e60053
@@ -394,7 +394,7 @@ menu-2-1-exec = menu-open-0
 type= custom/script
 interval= 1800
 exec= python ~/Desktop/Scripts/Python/weather_module/weather.py
-format= %{F#9f78e1}%{T4}<label>
+format= %{F#924DA3}%{T4}<label>
 
 [settings]
 screenchange-reload = true
