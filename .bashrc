@@ -9,9 +9,9 @@ alias ls='ls --color=auto'
 alias purge='pacman -Rns $(pacman -Qtdq) '
 alias sudo='sudo '
 alias installpkg='makepkg -sirc'
-alias log-out='kill -9 -1'
-alias pip-update='sudo pip install --upgrade --user '
-alias pip-install='sudo pip install -U '
+alias xlogout='kill -9 -1'
+alias pip-update='pip install --upgrade --user '
+alias pip-install='pip install -U '
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
 export TERM=termite
@@ -33,3 +33,7 @@ powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/share/powerline/bindings/bash/powerline.sh
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
