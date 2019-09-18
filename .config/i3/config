@@ -161,7 +161,8 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 mode "background" {
-     bindsym b exec wal -i /home/creator/Pictures/Wallpapers/ 
+	 bindsym d exec --no-startup-id wal --iterative -i /home/creator/Pictures/Wallpapers/
+     bindsym l exec --no-startup-id wal --iterative -li  /home/creator/Pictures/Wallpapers/ 
 	 bindsym Return mode "default"
      bindsym Escape mode "default"
      bindsym $mod+b mode "default"
