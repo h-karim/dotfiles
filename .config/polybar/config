@@ -1,13 +1,17 @@
 [colors]
-;background = ${xrdb:color0:#222}
-background = #77ffffff
+;background = #77ffffff
 background-alt = #77777777
-;foreground = ${xrdb:color7:#222}
-foreground = #000000
-foreground-alt = #555
-primary = #77ffb52a
-secondary = #77e60053
-alert = #bd2c40
+;foreground = #000000
+;foreground-alt = #555
+;primary = #77ffb52a
+;secondary = #77e60053
+;alert = #bd2c40
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -393,7 +397,7 @@ menu-2-1-exec = menu-open-0
 [module/openweathermap]
 type= custom/script
 interval= 1800
-exec= python ~/Desktop/Scripts/Python/weather_module/weather.py
+exec= python ~/Scripts/Python/weather_module/weather.py
 format= %{F#924DA3}%{T4}<label>
 
 [settings]
