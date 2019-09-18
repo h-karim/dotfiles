@@ -398,7 +398,7 @@ menu-2-1-exec = menu-open-0
 type= custom/script
 interval= 1800
 exec= python ~/Scripts/Python/weather_module/weather.py
-format= %{F#924DA3}%{T4}<label>
+format= %{colors.foreground-alt}%{T4}<label>
 
 [settings]
 screenchange-reload = true
