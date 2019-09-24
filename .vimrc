@@ -5,7 +5,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'drewtempelmeyer/palenight.vim'
+"Plug 'drewtempelmeyer/palenight.vim'
+Plug 'dylanaraps/wal.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
 call plug#end()
@@ -16,13 +17,14 @@ set term=xterm-256color
 set termguicolors
 
 "Color scheme
-colorscheme palenight 
+colorscheme wal
 "italics
-let g:palenight_terminal_italics=1
+"let g:palenight_terminal_italics=1
 "enable syntax highlight:
 syntax on
 "display line number
-set number
+"set number
+
 "spellcheck
 set nospell
 "display mode on the last line
@@ -44,5 +46,5 @@ command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
 let g:powerline_pycmd="py3"
 set laststatus=2
 "Custom colors
-highlight Comment guifg=#5af67f
-highlight LineNr guifg=#ffffff
+"highlight Comment guifg=#5af67f
+"highlight LineNr guifg=#ffffff
