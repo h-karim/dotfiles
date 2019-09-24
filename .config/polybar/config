@@ -174,7 +174,7 @@ label = BL
 
 bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = #fff
+bar-indicator-foreground = ${root.foreground}
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
