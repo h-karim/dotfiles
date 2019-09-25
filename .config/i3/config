@@ -203,7 +203,7 @@ for_window [class="^.*"] border pixel 1
 for_window [class="termite-floating"] border pixel 0 floating enable 
  
 # exec --no-startup-id feh --no-fehbg --randomize --bg-scale  ~/Pictures/Wallpapers/* &
-exec_always killall polybar &&  polybar -r example
+exec_always --no-startup-id killall polybar ; polybar -r example
 exec firefox
 exec --no-startup-id thunderbird
 exec --no-startup-id thunar --daemon ~/Desktop
