@@ -198,7 +198,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Disable window titlebars entirely
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 #no borders for terminal, open it floating by default
 for_window [class="termite-floating"] border pixel 0 floating enable 
  
