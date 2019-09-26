@@ -192,7 +192,7 @@ smart_borders on
 assign [class = "firefox"] $ws2
 assign [class = "Thunderbird"] $ws1
 assign [class="jetbrains-idea-ce"] $ws4
-
+assign [class="Thunar"] $ws1
 #scratchpad move to
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -207,7 +207,7 @@ exec_always --no-startup-id killall polybar ; polybar -r example
 exec firefox
 exec --no-startup-id thunderbird
 exec --no-startup-id thunar --daemon ~/Desktop
-exec_always --no-startup-id killall compton && compton -bc
+exec_always --no-startup-id killall compton ; compton -bc
 exec --no-startup-id mpd
 # lock screen 
 bindsym Alt+l exec light-locker-command -l
