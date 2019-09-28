@@ -1,4 +1,3 @@
-virtualbox-host-modules-arch
 rofi
 pywal
 reflector
@@ -16,7 +15,6 @@ ncmpcpp
 mpc
 mpd
 yay
-youtube-dl
 xorg
 xbindkeys
 wpa_supplicant
@@ -63,3 +61,17 @@ coreutils
 alsa-utils
 android-file-transfer
 openssh
+bonsai.sh-git 
+brscan4 
+deezloader-remix-bin 
+i3-gaps-next-git 
+masterpdfeditor 
+minecraft-launcher 
+numix-gtk-theme 
+polybar 
+siji-git 
+slack-desktop 
+thermald 
+ttf-ms-fonts 
+ttf-weather-icons 
+yay 
