@@ -161,8 +161,8 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 mode "background" {
-	 bindsym d exec --no-startup-id wal --saturate 0.8 --iterative -i /home/creator/Pictures/Wallpapers/dark
-     bindsym l exec --no-startup-id wal --saturate 0.8 --iterative -li  /home/creator/Pictures/Wallpapers/light 
+	 bindsym d exec --no-startup-id wal --saturate 1.0 --iterative -i /home/creator/Pictures/Wallpapers/dark
+     bindsym l exec --no-startup-id wal --saturate 1.0 --iterative -li  /home/creator/Pictures/Wallpapers/light 
 	 bindsym Return mode "default"
      bindsym Escape mode "default"
      bindsym $mod+b mode "default"
