@@ -12,9 +12,6 @@ Plug 'valloric/youcompleteme'
 call plug#end()
 
 
-"true colors
-set term=xterm-256color
-set termguicolors
 
 "Color scheme
 colorscheme wal
@@ -23,8 +20,13 @@ colorscheme wal
 "enable syntax highlight:
 syntax on
 "display line number
-"set number
+set number
 
+"true colors
+set t_Co=256
+"if (has("termguicolors"))
+	set termguicolors
+"endif
 "spellcheck
 set nospell
 "display mode on the last line
@@ -46,5 +48,10 @@ command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
 let g:powerline_pycmd="py3"
 set laststatus=2
 "Custom colors
-"highlight Comment guifg=#5af67f
+"highlight Comment ctermfg=#FF4500
 "highlight LineNr guifg=#ffffff
+
+"KEY MAPS
+noremap <F3> :set invnumber<CR>
+inoremap <F3> <C-O>:set invnumber<CR>
+
