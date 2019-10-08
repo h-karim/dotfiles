@@ -19,7 +19,7 @@ alias pip-update='pip install --upgrade --user '
 alias pip-install='pip install -U '
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
-export TERM=termite
+export TERM=xterm-termite
 export EDITOR=vim
 
 # Color files by types
