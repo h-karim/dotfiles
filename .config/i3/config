@@ -161,8 +161,8 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 mode "background" {
-	 bindsym d exec --no-startup-id wal --saturate 1.0 --iterative -i /home/creator/Pictures/Wallpapers/dark
-     bindsym l exec --no-startup-id wal --saturate 1.0 --iterative -li  /home/creator/Pictures/Wallpapers/light 
+	 bindsym d exec --no-startup-id wal --vte --saturate 1.0 --iterative -i /home/creator/Pictures/Wallpapers/
+     #bindsym l exec --no-startup-id wal --saturate 1.0 --iterative -nl
 	 bindsym Return mode "default"
      bindsym Escape mode "default"
      bindsym $mod+b mode "default"
@@ -203,11 +203,12 @@ for_window [class="^.*"] border pixel 0
 for_window [class="termite-floating"] border pixel 0 floating enable 
  
 # exec --no-startup-id feh --no-fehbg --randomize --bg-scale  ~/Pictures/Wallpapers/* &
+exec_always --no-startup-id killall compton ; compton -bc --experimental-backends
 exec_always --no-startup-id killall polybar ; polybar -r example
 exec firefox
 exec --no-startup-id thunderbird
-exec --no-startup-id thunar --daemon ~/Desktop
-exec_always --no-startup-id killall compton ; compton -bc
+exec --no-startup-id thunar --daemon ~/Desktop/Concordia 
+exec redshift 
 exec --no-startup-id mpd
 # lock screen 
 bindsym Alt+l exec light-locker-command -l
