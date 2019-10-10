@@ -5,27 +5,27 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-"Plug 'drewtempelmeyer/palenight.vim'
-Plug 'dylanaraps/wal.vim'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
-
 
 
 "Color scheme
 colorscheme wal
+
 "italics
-"let g:palenight_terminal_italics=1
+let g:palenight_terminal_italics=1
 "enable syntax highlight:
 syntax on
 "display line number
 set number
 
 "true colors
-set t_Co=256
+set t_Co=16
 "if (has("termguicolors"))
-	set termguicolors
+set termguicolors
 "endif
 "spellcheck
 set nospell
@@ -47,10 +47,13 @@ command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
 "POWERLINE
 let g:powerline_pycmd="py3"
 set laststatus=2
-"Custom colors
-"highlight Comment ctermfg=#FF4500
-"highlight LineNr guifg=#ffffff
 
+"custom colors
+"highlight Comment ctermfg=#FF4500
+highlight LineNr guifg=DarkGray
+highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
+highlight Search guibg=#EE86FF
+highlight Comment cterm=italic gui=italic
 "KEY MAPS
 noremap <F3> :set invnumber<CR>
 inoremap <F3> <C-O>:set invnumber<CR>
