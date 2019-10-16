@@ -10,6 +10,8 @@
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
 
+alias reboot='systemctl reboot'
+alias shutdown='systemctl poweroff'
 alias ls='ls --color=auto'
 alias purge='pacman -Rns $(pacman -Qtdq) '
 alias sudo='sudo '
