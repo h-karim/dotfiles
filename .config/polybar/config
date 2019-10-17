@@ -120,6 +120,11 @@ label-empty-padding = 4
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+strip-wsnumbers = true
 index-sort = true
 wrapping-scroll = false
 enable-scroll= false
@@ -155,10 +160,6 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 label-separator =  
 label-separator-padding = 2
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
