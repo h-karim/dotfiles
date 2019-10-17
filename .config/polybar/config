@@ -51,7 +51,7 @@ tray-padding = 0
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-wm-restack = i3
+;wm-restack = i3
 
 ;override-redirect = true
 
@@ -155,7 +155,10 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 label-separator =  
 label-separator-padding = 2
 
-
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
