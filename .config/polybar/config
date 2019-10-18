@@ -280,7 +280,8 @@ label-volume =  %percentage%%
 ;label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇  muted
+label-muted = 🔇 
+;muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -353,7 +354,7 @@ ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
-
+ramp-capacity-4 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
 animation-charging-0 = 
