@@ -205,9 +205,9 @@ for_window [class="termite-floating"] border pixel 0 floating enable
 # exec --no-startup-id feh --no-fehbg --randomize --bg-scale  ~/Pictures/Wallpapers/* &
 exec_always --no-startup-id killall compton ; compton -bc --experimental-backends
 exec_always --no-startup-id killall polybar ; polybar -r example
-exec firefox
 exec --no-startup-id thunderbird
 exec --no-startup-id thunar --daemon ~/Desktop/Concordia 
+exec firefox
 exec redshift 
 exec --no-startup-id mpd
 # lock screen 
