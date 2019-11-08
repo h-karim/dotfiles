@@ -18,7 +18,7 @@ alias sudo='sudo '
 alias installpkg='makepkg -sirc'
 alias xlogout='kill -9 -1'
 alias pip-update='pip install --upgrade --user '
-alias pip-install='pip install -U '
+alias pip-install='pip install --user '
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
 export TERM=xterm-termite
