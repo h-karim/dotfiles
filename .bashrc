@@ -9,7 +9,8 @@
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
-
+alias :q=$'echo "you\'re not in vim dumbass"'
+alias :wq=$'echo "you\'re not in vim dumbass"'
 alias reboot='systemctl reboot'
 alias shutdown='systemctl poweroff'
 alias ls='ls --color=auto'
