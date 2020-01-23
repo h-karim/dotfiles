@@ -22,11 +22,10 @@ pywal
 reflector
 octave
 qbittorrent
-ntp
 bookworm
 unzip
 python-pip
-compton
+picom
 arc-gtk-theme
 arc-icon-theme
 ncmpcpp
