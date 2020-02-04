@@ -1,3 +1,4 @@
+evince
 eclipse-java
 dbeaver
 maven
@@ -83,7 +84,6 @@ bonsai.sh-git
 brscan4 
 deezloader-remix-bin 
 i3-gaps-next-git 
-masterpdfeditor 
 minecraft-launcher 
 numix-gtk-theme 
 polybar 
