@@ -11,7 +11,7 @@
 !.config/mpd/mpd.conf
 !.config/polybar/config
 !*/.config/i3/config
-configprogress/*
+!configprogress/
 !configprogress/package_list
 !.config/termite/config
 !.gitignore
