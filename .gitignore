@@ -11,7 +11,7 @@
 !.xbindkeysrc
 !.config/mpd/mpd.conf
 !.config/polybar/config
-!*/i3/config
+!*/.config/i3/config
 !configprogress/package_list
 !.config/termite/config
 !.gitignore
