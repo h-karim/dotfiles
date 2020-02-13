@@ -1,5 +1,5 @@
 #everything:
-*
+/*
 #except:
 !.vimrc 
 !.bash_profile 
@@ -14,4 +14,3 @@
 !configprogress/package_list
 !.config/termite/config
 !.gitignore
-!*/
