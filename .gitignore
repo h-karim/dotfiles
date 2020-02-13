@@ -2,7 +2,6 @@
 *
 #except:
 !.vimrc 
-!custom
 !.bash_profile 
 !.bashrc 
 !.xbindkeysrc 
@@ -15,3 +14,4 @@
 !configprogress/package_list
 !.config/termite/config
 !.gitignore
+!*/
