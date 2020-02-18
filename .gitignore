@@ -25,8 +25,8 @@ configprogress/*
 !.config/termite/
 .config/termite/*
 !.config/termite/config
-#!.config/polybar/config
-#!*/.config/i3/config
-#!.config/termite/config
+!.config/dunst/
+.config/dunst/*
+!.config/dunst/dunstrc
 !.gitignore
 #!*/
