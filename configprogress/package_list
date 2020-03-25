@@ -1,3 +1,6 @@
+docker
+docker-compose
+pulseaudio-utils
 bluez-utils
 bluez
 virtualbox-guest-utils
