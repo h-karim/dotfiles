@@ -9,6 +9,7 @@
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
+alias j11='source ~/Scripts/Bash/switch-to-j11.sh'
 alias :q=$'echo "you\'re not in vim dumbass"'
 alias :wq=$'echo "you\'re not in vim dumbass"'
 alias reboot='systemctl reboot'
@@ -48,3 +49,4 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="$(yarn global bin):$PATH"
