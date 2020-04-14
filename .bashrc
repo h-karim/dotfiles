@@ -9,6 +9,7 @@
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
+alias j13='source ~/Scripts/Bash/switch-to-j13.sh'
 alias j11='source ~/Scripts/Bash/switch-to-j11.sh'
 alias :q=$'echo "you\'re not in vim dumbass"'
 alias :wq=$'echo "you\'re not in vim dumbass"'
