@@ -9,6 +9,7 @@
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
+
 alias j13='source ~/Scripts/Bash/switch-to-j13.sh'
 alias j11='source ~/Scripts/Bash/switch-to-j11.sh'
 alias :q=$'echo "you\'re not in vim dumbass"'
@@ -43,11 +44,3 @@ powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/share/powerline/bindings/bash/powerline.sh
-#Android studio environment:
-export PATH=$PATH:$HOME/.local/bin
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH="$(yarn global bin):$PATH"
