@@ -13,7 +13,7 @@ call plug#end()
 
 
 "Color scheme
-colorscheme wal
+colorscheme palenight 
 
 "italics
 let g:palenight_terminal_italics=1
@@ -47,6 +47,7 @@ command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
 "POWERLINE
 let g:powerline_pycmd="py3"
 set laststatus=2
+"YouCompleteMe
 
 "custom colors
 "highlight Comment ctermfg=#FF4500
@@ -66,4 +67,6 @@ map <C-Up> <C-W>k
 map <C-Left> <C-W>h
 map <C-Right> <C-W>l
 
-
+if $SSH_CONNECTION
+    colorscheme palenight
+endif
