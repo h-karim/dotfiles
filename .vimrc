@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
+Plug 'https://github.com/kana/vim-smartinput'
 Plug 'dylanaraps/wal.vim'
 call plug#end()
 
