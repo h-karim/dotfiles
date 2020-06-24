@@ -9,7 +9,10 @@
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
-
+alias frontend='ssh khasbini@login.acelab.ca -L 8080:localhost:45678'
+alias unmount1='fusermount -u ~/mount/LORIS/'
+alias mount2='sshfs -o port=35678 lorisadmin@localhost:/var/www/loris ~/mount/LORIS/'
+alias mount1='ssh khasbini@login.acelab.ca -L 35678:khasbini-dev.loris.ca:22062'
 alias j13='source ~/Scripts/Bash/switch-to-j13.sh'
 alias j11='source ~/Scripts/Bash/switch-to-j11.sh'
 alias :q=$'echo "you\'re not in vim dumbass"'
@@ -44,3 +47,10 @@ powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/share/powerline/bindings/bash/powerline.sh
+. /usr/share/bash-completion/completions/git
+
+#FUNCTIONS
+function pacstall {
+		echo "$1";
+		sudo pacman -S "$1" && echo "$1" >> ~/configprogress/package_list
+}
