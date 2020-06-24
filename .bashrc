@@ -54,3 +54,6 @@ function pacstall {
 		echo "$1";
 		sudo pacman -S "$1" && echo "$1" >> ~/configprogress/package_list
 }
+function pacremove {
+		sudo pacman -Rsn "$1" && cat ~/configprogress/package_list | grep -v "$1" > ~/configprogress/package_list
+}
