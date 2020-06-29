@@ -103,3 +103,7 @@ thermald
 ttf-ms-fonts 
 ttf-weather-icons 
 yay 
+gstreamer
+gst-libav
+gst-plugins-base
+gstreamer-vaapi
