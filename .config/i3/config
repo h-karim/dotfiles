@@ -161,7 +161,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 mode "background" {
-	 bindsym d exec --no-startup-id wal --vte --saturate 1.0 --iterative -i /home/creator/Pictures/Wallpapers/
+	 bindsym d exec --no-startup-id wal -l --vte --saturate 1.0 --iterative -i /home/creator/Pictures/Wallpapers/
      #bindsym l exec --no-startup-id wal --saturate 1.0 --iterative -nl
 	 bindsym Return mode "default"
      bindsym Escape mode "default"
@@ -202,7 +202,7 @@ for_window [class="^.*"] border pixel 0
 for_window [class="termite-floating"] border pixel 0 floating enable 
  
 # exec --no-startup-id feh --no-fehbg --randomize --bg-scale  ~/Pictures/Wallpapers/* &
-exec_always --no-startup-id killall compton ; compton -bc --experimental-backends
+exec_always --no-startup-id killall picom; picom
 exec_always --no-startup-id dunst 
 exec_always --no-startup-id killall polybar ; polybar -r example
 exec --no-startup-id thunderbird

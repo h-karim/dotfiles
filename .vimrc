@@ -9,13 +9,13 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
 Plug 'https://github.com/kana/vim-smartinput'
-Plug 'dylanaraps/wal.vim'
+"Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 
 "Color scheme
-colorscheme palenight 
-
+set background=dark
+colorscheme palenight
 "italics
 let g:palenight_terminal_italics=1
 "enable syntax highlight:
@@ -49,6 +49,8 @@ command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
 let g:powerline_pycmd="py3"
 set laststatus=2
 "YouCompleteMe
+let g:ycm_autoclose_preview_window_after_completion = 0
+let g:ycm_autoclose_preview_window_after_insertion = 0
 
 "custom colors
 "highlight Comment ctermfg=#FF4500

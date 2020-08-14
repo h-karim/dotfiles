@@ -28,5 +28,6 @@ configprogress/*
 !.config/dunst/
 .config/dunst/*
 !.config/dunst/dunstrc
+!.config/picom/picom.conf
 !.gitignore
 #!*/

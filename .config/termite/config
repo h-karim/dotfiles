@@ -26,7 +26,7 @@ hyperlinks = true
 cursor_blink =on 
 
 # "block", "underline" or "ibeam"
-cursor_shape = underline
+cursor_shape = block 
 # Hide links that are no longer valid in url select overlay mode
 #filter_unmatched_urls = true
 
@@ -57,11 +57,11 @@ cursor_shape = underline
 
 # Colors from color0 to color254 can be set
 # Black, Gray, Silver, White
-foreground          = #526057
-foreground_bold     = #232a25
-cursor              = #dfe7e2
-cursor_foreground   =#171c19 
-background          = rgba(236, 244, 238)
+foreground          = White
+foreground_bold     = White
+cursor              = White
+cursor_foreground   = White
+background          = Black
 
 # 16 color space
 
