@@ -66,7 +66,6 @@ picom
 polkit-gnome
 polybar 
 powerline-fonts
-powerline-vim
 pulseaudio
 pulseaudio-utils
 python-pip
@@ -106,3 +105,8 @@ xf86-video-vmware
 xorg
 xss-lock
 yay
+xdg-utils
+xdg-desktop-portal-gtk
+xclip
+neovim
+powerline
