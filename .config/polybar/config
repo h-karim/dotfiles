@@ -1,27 +1,27 @@
 [colors]
-;background = #77ffffff
+background = #77ffffff
 background-alt = #77777777
-;foreground = #000000
-;foreground-alt = #555
-;primary = #77ffb52a
-;secondary = #77e60053
-;alert = #bd2c40
-background = ${xrdb:color0:#222}
-foreground = ${xrdb:color7:#222}
-foreground-alt = ${xrdb:color7:#222}
-primary = ${xrdb:color1:#222}
-secondary = ${xrdb:color2:#222}
-alert = ${xrdb:color3:#222}
+foreground = #000000
+foreground-alt = #555
+primary = #77ffb52a
+secondary = #77e60053
+alert = #bd2c40
+;background = ${xrdb:color0:#222}
+;foreground = ${xrdb:color7:#222}
+;foreground-alt = ${xrdb:color7:#222}
+;primary = ${xrdb:color1:#222}
+;secondary = ${xrdb:color2:#222}
+;alert = ${xrdb:color3:#222}
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
 ;offset-x = 1%
-;offset-y = 1%
-radius = 0.0
+;offset-y = -50%
+radius = 9.0
 fixed-center = true
-
+bottom = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -33,10 +33,9 @@ border-color = #00000000
 
 padding-left = 0
 padding-right = 2
-
 module-margin-left = 1
 module-margin-right = 2
-
+dim-value = 1.0
 font-0 = Verdana:style=Regular:pixelsize=10;1
 font-1 = Unifont:style=Sans-Serif:size=8:antialias=false;0
 font-2 = FontAwesome:style=regular:antialias=true
@@ -51,7 +50,7 @@ tray-padding = 0
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
@@ -134,7 +133,6 @@ label-mode = %mode%
 label-mode-padding = 2
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
-
 ; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-background = ${module/bspwm.label-focused-background}
@@ -143,7 +141,7 @@ label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
-label-unfocused-padding = ${module/bspwm.label-occupied-padding}
+label-unfocused-padding = 4
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
