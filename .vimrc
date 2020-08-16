@@ -9,22 +9,23 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
 Plug 'https://github.com/kana/vim-smartinput'
-"Plug 'dylanaraps/wal.vim'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 
 "Color scheme
-set background=dark
-colorscheme palenight
+set background=dark "or light if you prefer the light version
+colo palenight
 "italics
 let g:palenight_terminal_italics=1
+"let g:two_firewatch_italics=1
 "enable syntax highlight:
 syntax on
 "display line number
 set number
 
 "true colors
-set t_Co=16
+"set t_Co=16
 "if (has("termguicolors"))
 set termguicolors
 "endif
@@ -45,13 +46,14 @@ set tabstop=4
 "COMMANDS
 "get the name of a group
 command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")
-"POWERLINE
-let g:powerline_pycmd="py3"
-set laststatus=2
-"YouCompleteMe
-let g:ycm_autoclose_preview_window_after_completion = 0
-let g:ycm_autoclose_preview_window_after_insertion = 0
-
+"if !has('nvim')
+"		"POWERLINE
+"		let g:powerline_pycmd="py3"
+"		set laststatus=2
+"		"YouCompleteMe
+"		let g:ycm_autoclose_preview_window_after_completion = 0
+"		let g:ycm_autoclose_preview_window_after_insertion = 0
+"endif
 "custom colors
 "highlight Comment ctermfg=#FF4500
 highlight LineNr guifg=DarkGray
