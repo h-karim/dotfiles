@@ -28,6 +28,11 @@ configprogress/*
 !.config/dunst/
 .config/dunst/*
 !.config/dunst/dunstrc
+!.config/picom/
+.config/picom/*
 !.config/picom/picom.conf
+!.config/nvim/
+.config/nvim/*
+!.config/nvim/init.vim
 !.gitignore
 #!*/
