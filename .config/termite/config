@@ -57,11 +57,11 @@ cursor_shape = block
 
 # Colors from color0 to color254 can be set
 # Black, Gray, Silver, White
-foreground          = White
+foreground          = Black
 foreground_bold     = White
-cursor              = White
-cursor_foreground   = White
-background          = Black
+cursor              = black
+cursor_foreground   = white
+background          = #BDEEEF
 
 # 16 color space
 
