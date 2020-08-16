@@ -8,7 +8,8 @@
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
+alias rec='ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac '
 alias frontend='ssh khasbini@login.acelab.ca -L 8080:localhost:45678'
 alias unmount1='fusermount -u ~/mount/LORIS/'
 alias mount2='sshfs -o port=35678 lorisadmin@localhost:/var/www/loris ~/mount/LORIS/'
@@ -26,9 +27,9 @@ alias installpkg='makepkg -sirc'
 alias xlogout='kill -9 -1'
 alias pip-update='pip install --upgrade --user '
 alias pip-install='pip install --user '
+alias vim='nvim '
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
-export TERM=xterm-termite
 export EDITOR=vim
 
 # Color files by types
@@ -47,6 +48,7 @@ powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/share/powerline/bindings/bash/powerline.sh
+
 . /usr/share/bash-completion/completions/git
 
 #FUNCTIONS
