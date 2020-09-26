@@ -61,7 +61,7 @@ foreground          = Black
 foreground_bold     = White
 cursor              = black
 cursor_foreground   = white
-background          = #BDEEEF
+background          = rgba(189, 238, 239, 0.7) 
 
 # 16 color space
 
@@ -108,7 +108,7 @@ color21 = #232a25#font = Monospace 12
 #active_background = #3f3f3f
 #padding = 2
 #border = #3f3f3f
-#border_width = 0.5
-roundness = 2.0
+border_width = 0.0
+roundness = 7.0
 
  vim: ft=dosini cms=#%s

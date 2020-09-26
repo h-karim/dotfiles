@@ -1,4 +1,3 @@
-aircrack-ng
 alsa-utils
 android-file-transfer
 android-studio
@@ -21,7 +20,6 @@ dmenu
 docker
 docker-compose
 dunst
-eclipse-java
 efibootmgr
 evince
 feh
@@ -82,7 +80,6 @@ snapd
 sudo
 system-config-printer
 termite
-thermald
 thermald 
 thunar
 thunar-volman
@@ -93,7 +90,6 @@ ttf-weather-icons
 unrar
 unzip
 usbutils
-usbutils
 util-linux
 virtualbox
 virtualbox-guest-utils
@@ -103,10 +99,10 @@ wpa_supplicant
 xbindkeys
 xf86-video-vmware
 xorg
-xss-lock
 yay
 xdg-utils
 xdg-desktop-portal-gtk
 xclip
 neovim
 powerline
+jupyter

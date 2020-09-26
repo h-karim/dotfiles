@@ -1,3 +1,4 @@
+source .bash_aliases
 #
 # ~/.bashrc
 #

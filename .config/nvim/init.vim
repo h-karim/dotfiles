@@ -5,6 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+"Plug 'neovim/nvim-lsp'
 Plug 'ayu-theme/ayu-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -12,9 +13,11 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
 Plug 'https://github.com/kana/vim-smartinput'
-Plug 'dylanaraps/wal.vim'
 Plug 'Yggdroot/indentLine'
 call plug#end()
+
+"youcompleteme
+autocmd InsertLeave * pclose
 
 "airline
 let g:airline#extensions#tabline#enabled = 1
@@ -22,9 +25,9 @@ let g:airline_powerline_fonts = 1
 
 "indentLine
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-
+let g:indentLine_enabled = 1
 "Color scheme
-set background=light 
+set background=light
 colo ayu
 let ayucolor="light"
 "italics
@@ -48,7 +51,6 @@ set smartindent
 set cino=e-4
 "highlight matching search strings
 set hlsearch
-	
 "tab-spacing
 set tabstop=4
   		
@@ -80,5 +82,6 @@ map <C-Left> <C-W>h
 map <C-Right> <C-W>l
 
 if $SSH_CONNECTION
-    colorscheme palenight
+    colorscheme ayu
+    let ayucolor="light"
 endif
