@@ -6,6 +6,9 @@ endif
 
 call plug#begin('~/.vim/plugged')
 "Plug 'neovim/nvim-lsp'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'lervag/vimtex'
 Plug 'ayu-theme/ayu-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -18,7 +21,9 @@ call plug#end()
 
 "youcompleteme
 autocmd InsertLeave * pclose
-
+"vimtex
+let g:tex_flavor = 'latex'
+let g:vimtex_complete_close_braces=1
 "airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
