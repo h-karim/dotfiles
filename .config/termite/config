@@ -1,4 +1,8 @@
 [options]
+padding = 10%
+#border = #3f3f3f
+border_width = 0.0
+roundness = 7.0
 #allow_bold = true
 audible_bell = true 
 #bold_is_bright = true
@@ -6,7 +10,7 @@ audible_bell = true
 #cell_width_scale = 1.0
 clickable_url = true
 dynamic_title = true
-font = Source code pro 11
+font =sf mono light 
 fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -101,14 +105,11 @@ color17 = #867469
 color18 = #dfe7e2
 color19 = #87928a
 color20 = #5f6d64
-color21 = #232a25#font = Monospace 12
+color21 = #232a25
+#font = Monospace 12
 #foreground = #dcdccc
 #background = #3f3f3f
 #active_foreground = #e68080
 #active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-border_width = 0.0
-roundness = 7.0
 
  vim: ft=dosini cms=#%s
