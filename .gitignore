@@ -16,6 +16,7 @@ configprogress/*
 !.config/polybar/
 .config/polybar/*
 !.config/polybar/config
+!.config/polybar/hdmi1
 !.config/mpd/
 .config/mpd/*
 !.config/mpd/mpd.conf
