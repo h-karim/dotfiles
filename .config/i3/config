@@ -195,21 +195,30 @@ assign [class = "Thunderbird"] $ws1
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
+#multiple monitors
+# Move the current workspace to the next output
+# (effectively toggles when you only have two outputs)
+bindsym $mod+x move workspace to output right
+
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 0
 #no borders for terminal, open it floating by default
 for_window [class="termite-floating"] border pixel 0 floating enable resize set 794 648
  
-exec_always --no-startup-id dunst 
+exec --no-startup-id dunst 
 exec_always --no-startup-id killall picom; picom --experimental-backends &
+exec xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --left-of eDP1
 exec ~/.fehbg &
 exec --no-startup-id thunderbird &
-exec_always --no-startup-id killall polybar ; polybar -r example 
+exec --no-startup-id polybar -r example 
 exec i3-msg 'workspace 1:; exec thunar ~/Desktop/Concordia/Y4 &'
 exec firefox &
 exec redshift &
 exec --no-startup-id mpd &
 # lock screen 
 bindsym Alt+l exec light-locker-command -l
+bindsym $mod+m exec xrandr --output HDMI1 --off
+bindsym $mod+o exec --no-startup-id xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --left-of eDP1 &&  polybar -r left --config='~/.config/polybar/hdmi1'
+
 #border radius (one day...)
 #border_radius 5

@@ -34,7 +34,7 @@ let g:indentLine_enabled = 1
 "Color scheme
 set background=light
 colo ayu
-let ayucolor="light"
+let ayucolor="mirage"
 "italics
 let g:palenight_terminal_italics=1
 "let g:two_firewatch_italics=1
