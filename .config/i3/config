@@ -42,10 +42,10 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id rofi -modi "drun" -show drun
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -207,7 +207,7 @@ for_window [class="termite-floating"] border pixel 0 floating enable resize set 
  
 exec --no-startup-id dunst 
 exec_always --no-startup-id killall picom; picom --experimental-backends &
-exec xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --left-of eDP1
+exec xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --left-of eDP1 && polybar -r left --config='~/.config/polybar/hdmi1'
 exec ~/.fehbg &
 exec --no-startup-id thunderbird &
 exec --no-startup-id polybar -r example 
