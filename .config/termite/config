@@ -63,9 +63,9 @@ cursor_shape = block
 # Black, Gray, Silver, White
 foreground          = Black
 foreground_bold     = White
-cursor              = #FF9770
+cursor              = black
 cursor_foreground   = white
-background          = rgba(189, 238, 239, 0.7) 
+background          = rgba(253, 250, 247, 0.7) 
 
 # 16 color space
 
