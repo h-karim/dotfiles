@@ -1,6 +1,6 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    \ https:/raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
@@ -17,6 +17,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
 Plug 'https://github.com/kana/vim-smartinput'
 Plug 'Yggdroot/indentLine'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 call plug#end()
 
 "youcompleteme
@@ -27,14 +28,16 @@ let g:vimtex_complete_close_braces=1
 "airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme='onehalflight'
 
 "indentLine
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_enabled = 1
 "Color scheme
 set background=light
-colo ayu
-let ayucolor="mirage"
+colo onehalfdark
+
+"let ayucolor="mirage"
 "italics
 let g:palenight_terminal_italics=1
 "let g:two_firewatch_italics=1
@@ -85,8 +88,18 @@ map <C-Down> <C-W>j
 map <C-Up> <C-W>k
 map <C-Left> <C-W>h
 map <C-Right> <C-W>l
-
+nmap <F2> :call ToggleLightMode() <CR>
 if $SSH_CONNECTION
     colorscheme ayu
     let ayucolor="light"
 endif
+
+function ToggleLightMode()
+		if g:colors_name == 'onehalfdark'
+			colorscheme onehalflight
+			let g:airline_theme='onehalfdark'
+		else 
+				colorscheme onehalfdark
+				let g:airline_theme='onehalflight'
+		endif
+endfunction
