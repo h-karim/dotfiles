@@ -216,7 +216,7 @@ for_window [class="termite-floating"] border pixel 0 floating enable resize set 
  
 exec --no-startup-id dunst 
 exec_always --no-startup-id killall picom; picom --experimental-backends &
-exec xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --left-of eDP1 && polybar -r left --config='~/.config/polybar/hdmi1'
+exec xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --right-of eDP1 && polybar -r left --config='~/.config/polybar/hdmi1'
 exec ~/.fehbg &
 exec --no-startup-id thunderbird &
 exec --no-startup-id polybar -r example 
@@ -227,7 +227,7 @@ exec --no-startup-id mpd &
 # lock screen 
 bindsym Alt+l exec light-locker-command -l
 bindsym $mod+m exec xrandr --output HDMI1 --off
-bindsym $mod+o exec --no-startup-id xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --left-of eDP1 &&  polybar -r left --config='~/.config/polybar/hdmi1'
+bindsym $mod+o exec --no-startup-id xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --right-of eDP1 &&  polybar -r left --config='~/.config/polybar/hdmi1'
 
 #border radius (one day...)
 #border_radius 5
