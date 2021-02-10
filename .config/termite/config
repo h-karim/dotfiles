@@ -62,7 +62,7 @@ cursor_shape = block
 # Colors from color0 to color254 can be set
 # Black, Gray, Silver, White
 foreground          = Black
-foreground_bold     = White
+foreground_bold     = Grey
 cursor              = black
 cursor_foreground   = white
 background          = rgba(253, 250, 247, 0.7) 
