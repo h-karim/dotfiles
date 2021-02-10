@@ -73,7 +73,6 @@ reaver
 redshift
 reflector
 rofi
-scrot
 siji-git 
 slack-desktop 
 snapd
@@ -111,3 +110,4 @@ smartmontools
 ruby
 betterlockscreen
 texlive-core
+maim

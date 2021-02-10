@@ -92,10 +92,10 @@
   XF86AudioStop 
 
 # partial screenshot
-"scrot %F-%H:%M:%S.png -se 'mv $f Pictures/screenshots/'"
-  Shift+Mod4+p+Release
+"maim -s | tee Pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S").png | xclip -selection clipboard -t image/png"
+  Shift+Mod4+p
 # full screenshot
-"scrot %F-%H:%M:%S.png -e 'mv $f Pictures/screenshots/'"
+"maim | tee Pictures/screenshots/$(date +"%Y-%m-%d_%H:%M:%S").png | xclip -selection clipboard -t image/png"
   Shift+Mod4+s
 # Increase backlight
 "xbacklight -inc 10"
