@@ -15,9 +15,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
-Plug 'https://github.com/kana/vim-smartinput'
 Plug 'Yggdroot/indentLine'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 
 "youcompleteme
@@ -28,29 +28,24 @@ let g:vimtex_complete_close_braces=1
 "airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='onehalflight'
+let g:airline_theme='material'
+
+let g:material_theme_style='lighter'
+let g:material_terminal_italics = 1
 
 "indentLine
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_enabled = 1
 "Color scheme
-set background=light
-colo onehalfdark
+colo material
 
-"let ayucolor="mirage"
-"italics
-let g:palenight_terminal_italics=1
-"let g:two_firewatch_italics=1
 "enable syntax highlight:
 syntax on
 "display line number
 set number
 
 "true colors
-"set t_Co=16
-"if (has("termguicolors"))
 set termguicolors
-"endif
 "spellcheck
 set nospell
 "display mode on the last line
@@ -95,11 +90,11 @@ if $SSH_CONNECTION
 endif
 
 function ToggleLightMode()
-		if g:colors_name == 'onehalfdark'
-			colorscheme onehalflight
-			let g:airline_theme='onehalfdark'
+		if g:material_theme_style =='lighter'
+				let g:material_theme_style = 'default'	
+				colo material
 		else 
-				colorscheme onehalfdark
-				let g:airline_theme='onehalflight'
+				let g:material_theme_style = 'lighter'	
+				colo material
 		endif
 endfunction
