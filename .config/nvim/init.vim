@@ -6,6 +6,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 "Plug 'neovim/nvim-lsp'
+Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
