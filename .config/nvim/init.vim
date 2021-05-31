@@ -10,14 +10,14 @@ Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
-Plug 'ayu-theme/ayu-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'drewtempelmeyer/palenight.vim'
+"Plug 'ayu-theme/ayu-vim'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+"Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
 Plug 'Yggdroot/indentLine'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+"Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 
@@ -57,14 +57,10 @@ set cino=e-4
 set hlsearch
 "tab-spacing
 set tabstop=4
-  		
+set shiftwidth=4
+set expandtab
 "COMMANDS
-"get the name of a group
 if !has('nvim')
-		"POWERLINE
-"	let g:powerline_pycmd="py3"
-"		set laststatus=2
-"		"YouCompleteMe
 		let g:ycm_autoclose_preview_window_after_completion = 0
 		let g:ycm_autoclose_preview_window_after_insertion = 0
 endif
@@ -85,10 +81,6 @@ map <C-Up> <C-W>k
 map <C-Left> <C-W>h
 map <C-Right> <C-W>l
 nmap <F2> :call ToggleLightMode() <CR>
-if $SSH_CONNECTION
-    colorscheme ayu
-    let ayucolor="light"
-endif
 
 function ToggleLightMode()
 		if g:material_theme_style =='lighter'
