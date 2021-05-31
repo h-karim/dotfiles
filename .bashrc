@@ -4,28 +4,12 @@ source ~/.bash_aliases
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+#[[ $- != *i* ]] && return
 
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # (cat ~/.cache/wal/sequences &)
-alias expo='~/.config/yarn/global/node_modules/expo-cli/bin/expo.js'
-alias rec='ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f pulse -ac 2 -i 0 -c:v libx264 -preset ultrafast -c:a aac '
-alias j13='source ~/Scripts/Bash/switch-to-j13.sh'
-alias j11='source ~/Scripts/Bash/switch-to-j11.sh'
-alias :q=$'echo "you\'re not in vim dumbass"'
-alias :wq=$'echo "you\'re not in vim dumbass"'
-alias reboot='systemctl reboot'
-alias shutdown='systemctl poweroff'
-alias ls='ls --color=auto'
-alias purge='pacman -Rns $(pacman -Qtdq) '
-alias sudo='sudo '
-alias installpkg='makepkg -sirc'
-alias xlogout='kill -9 -1'
-alias pip-update='pip install --upgrade --user '
-alias pip-install='pip install --user '
-alias vim='nvim '
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
 export EDITOR=nvim
@@ -33,6 +17,7 @@ export PATH="/home/creator/Android/Sdk/platform-tools:$PATH"
 export ANDROID_SDK='/home/creator/Android/Sdk'
 export ANDROID_HOME=$ANDROID_SDK
 export PATH="/home/creator/.gem/ruby/2.7.0/bin:$PATH"
+MOZ_ENABLE_WAYLAND=1
 # Color files by types
 set colored-stats On
 # Append char to indicate type
