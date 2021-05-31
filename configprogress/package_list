@@ -111,3 +111,9 @@ ruby
 betterlockscreen
 texlive-core
 maim
+signal-desktop
+sway
+wayland
+wofi
+alacritty
+rclone
