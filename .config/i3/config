@@ -29,8 +29,8 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite --class termite-floating  
-bindsym $mod+Shift+Return exec termite
+bindsym $mod+Return exec alacritty 
+#bindsym $mod+Shift+Return exec termite
 # kill focused window
 bindsym $mod+Shift+q kill
 
