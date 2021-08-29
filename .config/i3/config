@@ -214,7 +214,7 @@ bindsym $mod+m exec xrandr --output HDMI1 --off
 bindsym $mod+o exec --no-startup-id xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --right-of eDP1 &&  polybar -r left --config='~/.config/polybar/hdmi1'
 
 # Disable window titlebars entirely
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 #no borders for terminal, open it floating by default
 for_window [class="termite-floating"] border pixel 0 floating enable resize set 794 648
  

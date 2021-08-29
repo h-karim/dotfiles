@@ -1,4 +1,5 @@
 source ~/.bash_aliases
+source /etc/bash_completion.d/rclone
 #
 # ~/.bashrc
 #
