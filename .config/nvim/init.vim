@@ -31,7 +31,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='material'
 
-let g:material_theme_style='lighter'
+let g:material_theme_style='default'
 let g:material_terminal_italics = 1
 
 "indentLine
@@ -44,7 +44,8 @@ colo material
 syntax on
 "display line number
 set number
-
+"enable mouse
+set mouse=a
 "true colors
 set termguicolors
 "spellcheck
