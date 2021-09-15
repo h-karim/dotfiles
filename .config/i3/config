@@ -224,7 +224,7 @@ exec xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --right-of eDP1 && po
 exec ~/.fehbg &
 exec --no-startup-id thunderbird &
 exec --no-startup-id polybar -r example 
-exec i3-msg 'workspace 1:; exec thunar ~/Desktop/Concordia/Y4 &'
+exec i3-msg 'workspace 1:; exec thunar ~/Desktop/Concordia/Y5 &'
 exec firefox &
 exec redshift &
 exec --no-startup-id mpd &
