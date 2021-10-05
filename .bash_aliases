@@ -1,4 +1,4 @@
-
+alias sus='sudo systemctl suspend'
 alias expo='~/.config/yarn/global/node_modules/expo-cli/bin/expo.js'
 alias rec='ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f pulse -ac 2 -i 0 -c:v libx264 -preset ultrafast -c:a aac '
 alias j13='source ~/Scripts/Bash/switch-to-j13.sh'
