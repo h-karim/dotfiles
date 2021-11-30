@@ -1,0 +1,8 @@
+
+configuration {
+	display-drun:	"";
+	show-icons: true;
+	sidebar-mode: false;
+}
+
+@theme "material"
