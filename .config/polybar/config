@@ -47,7 +47,7 @@ modules-center = date openweathermap
 modules-right = xbacklight pulseaudio xkeyboard memory  cpu wlan  battery temperature 
 
 tray-position = right
-tray-padding = 0
+tray-padding = 5
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
