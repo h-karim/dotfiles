@@ -219,15 +219,15 @@ for_window [class="^.*"] border pixel 3
 for_window [class="termite-floating"] border pixel 0 floating enable resize set 794 648
  
 exec --no-startup-id dunst   -config '~/.config/dunst/dunstrc'
-exec_always --no-startup-id killall picom; picom --experimental-backends &
+exec xbindkeys 
+exec_always --no-startup-id killall picom; picom --experimental-backends 
 exec xrandr | grep 'HDMI1' && xrandr --output HDMI1 --auto --right-of eDP1 && polybar -r left --config='~/.config/polybar/hdmi1'
-exec ~/.fehbg &
-exec --no-startup-id thunderbird &
+exec --no-startup-id ~/.fehbg 
+exec --no-startup-id thunderbird
 exec --no-startup-id polybar -r example 
-exec i3-msg 'workspace 1:; exec thunar ~/Desktop/Concordia/Y5 &'
-exec firefox &
-exec redshift &
-exec --no-startup-id mpd &
+exec --no-startup-id killall i3-msg 'workspace 1:; exec thunar ~/Desktop/Concordia/Y5 &'
+exec firefox 
+#exec --no-startup-id mpd &
 
 #border radius (one day...)
 #border_radius 5
