@@ -14,10 +14,8 @@ source /etc/bash_completion.d/rclone
 PS1='[\u@\h \W]\$ '
 shopt -s autocd
 export EDITOR=nvim
-export PATH="/home/creator/Android/Sdk/platform-tools:$PATH"
-export ANDROID_SDK='/home/creator/Android/Sdk'
-export ANDROID_HOME=$ANDROID_SDK
-export PATH="/home/creator/.gem/ruby/2.7.0/bin:$PATH"
+#export ANDROID_SDK='/home/creator/Android/Sdk'
+#export ANDROID_HOME=$ANDROID_SDK
 MOZ_ENABLE_WAYLAND=1
 # Color files by types
 set colored-stats On
