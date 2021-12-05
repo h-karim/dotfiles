@@ -37,4 +37,9 @@ configprogress/*
 .config/nvim/*
 !.config/nvim/init.vim
 !.gitignore
+!.config/sway/
+!.config/sway/*
+!.config/rofi/
+.config/rofi
+!.config/rofi/config.rasi
 #!*/
