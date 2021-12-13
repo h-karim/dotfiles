@@ -1,0 +1,40 @@
+[datetime]
+command=date +"%d %B %Y     %H:%M"
+interval=1
+
+[brightness]
+command= echo $(brightnessctl -m | awk -F ',' '{print $4}')
+interval=once
+signal=10
+label=💡
+
+[volume]
+command=./volume.sh
+interval=1
+signal=9
+[wifi]
+command=echo "$(iwgetid |egrep -o  '"(.*)$'|sed s/\"//g)"
+interval=2
+label= 
+
+[cpu_usage2]
+command=./cpu_usage2
+markup=pango
+interval=persist
+max_width=CPU 100%
+REFRESH_TIME=1
+LABEL=CPU 
+#WARN_PERCENT=50
+CRIT_PERCENT=80
+DECIMALS=0
+
+[memory]
+command= ./memory
+label= 
+interval=1
+
+[battery2]
+command=./battery2
+markup=pango
+interval=30
+
