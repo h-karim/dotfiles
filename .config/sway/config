@@ -1,16 +1,16 @@
 for_window [app_id="floating-terminal"] floating enable
 for_window [app_id="floating-terminal"] opacity 0.75
 
-set $ws1 1:
-set $ws2 2:
-set $ws3 3:
-set $ws4 4:
-set $ws5 5:5
-set $ws6 6:6
-set $ws7 7:7
-set $ws8 8:8 
-set $ws9 9:9
-set $ws10 10:10
+set $ws1 
+set $ws2 
+set $ws3 
+set $ws4 
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8 
+set $ws9 9
+set $ws10 10
 
 smart_gaps on    
 gaps inner 10    
@@ -49,7 +49,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show drun
+set $menu wofi --show drun 
 #dmenu_run | xargs swaymsg exec --
 
 ### Output configuration
@@ -273,13 +273,25 @@ mode "power state" {
         bindsym Escape mode "default"    
         # lock screen     
         }
+#take a screenshot and copy it to clipboard
+bindsym $mod+Shift+s exec 'grim -g "$(slurp)" -t png - | wl-copy -t image/png'
 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+9 i3blocks
+
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+9 i3blocks
+
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+9 i3blocks
+ 
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%- && pkill -RTMIN+10 i3blocks
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%  && pkill -RTMIN+10 i3blocks
+bindsym $mod+comma exec brightnessctl set 5%- && pkill -RTMIN+10 i3blocks
+bindsym $mod+period exec brightnessctl set +5%  && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 include /etc/sway/config.d/*
+
+workspace 🏠
+exec thunderbird
+workspace  
+exec firefox
