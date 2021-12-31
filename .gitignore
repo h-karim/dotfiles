@@ -42,4 +42,5 @@ configprogress/*
 !.config/rofi/
 .config/rofi
 !.config/rofi/config.rasi
+!.config/i3blocks/*
 #!*/

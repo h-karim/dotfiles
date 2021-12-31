@@ -1,5 +1,5 @@
 [datetime]
-command=date +"%d %B %Y     %H:%M"
+command=date +"%A %d %B %Y     %H:%M"
 interval=1
 
 [brightness]
